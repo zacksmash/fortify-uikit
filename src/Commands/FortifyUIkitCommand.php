@@ -3,6 +3,7 @@
 namespace Zacksmash\FortifyUIkit\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\File;
 
 class FortifyUIkitCommand extends Command
 {
@@ -26,17 +27,13 @@ class FortifyUIkitCommand extends Command
 
     protected function updateWebpackUrl()
     {
-        $webpack_file = file_get_contents(base_path('webpack.mix.js'));
-
-        $webpack_file = str_replace(
-            'http://CHANGE_ME.test',
-            env('APP_URL'),
-            $webpack_file
-        );
-
-        file_put_contents(
+        File::put(
             base_path('webpack.mix.js'),
-            $webpack_file
+            str_replace(
+                'http://CHANGE_ME.test',
+                env('APP_URL'),
+                File::get(base_path('webpack.mix.js'))
+            )
         );
     }
 }
