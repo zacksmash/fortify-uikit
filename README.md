@@ -4,12 +4,18 @@
 
 **FortifyUIkit** is a Laravel Fortify UI preset, built with UIkit.
 
+- [Requirements](#requireents)
 - [Installation](#installation)
+
+<a name="requirements"></a>
+## Requirements
+
+This package requires Laravel Fortify and FortifyUI. Installing [*FortifyUI*](https://github.com/zacksmash/fortify-ui) will automatically install and configure Laravel Fortify for you, so you may start there.
 
 <a name="installation"></a>
 ## Installation
 
-To get started, you'll need to install **FortifyUIkit** using Composer. This package requires [*FortifyUI*](https://github.com/zacksmash/fortify-ui), so please make sure you have installed that first.
+To get started, you'll need to install **FortifyUIkit** using Composer.
 
 ```bash
 composer require zacksmash/fortify-uikit
@@ -23,10 +29,10 @@ php artisan uikit:install
 
 This command will publish **FortifyUIkits's** views and resources to your project.
 
-- All Auth views
+- All `auth` views
 - a `webpack.mix.js` file, tuned for UIkit
-- a `package.json` file, for all NPM modules
-- an `.editorconfig` file
+- a `package.json` file, for required NPM modules
+- a slightly opioniated `.editorconfig` file
 - a `.gitignore`
 
 <p align="center"><img  src="https://github.com/zacksmash/fortify-uikit/blob/master/fortify-uikit-screenshot.png"></p>
