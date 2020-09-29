@@ -1,0 +1,61 @@
+/**
+ * ZURB Foundation Utility Mixins
+ */
+@import 'util/util';
+
+/**
+ * Calulates remaining viewport margin outside the grid
+ *
+ * @param property string The CSS property to modify
+ * @param modifier value  A CSS unit of measurment (optional)
+ */
+@mixin viewportMargin($property: left, $modifier: 0px) {
+  #{$property}: calc(((100vw - #{$container-max-width}) / 2) + (#{$modifier}));
+}
+
+/**
+ * Calulates remaining viewport margin outside the grid
+ * and applies a negative value to it
+ *
+ * @param property string The CSS property to modify
+ * @param modifier value  A CSS unit of measurment (optional)
+ */
+@mixin negativeViewportMargin($property: left, $modifier: 0px) {
+  #{$property}: calc(((100vw - #{$container-max-width}) / -2) - (#{$modifier}));
+}
+
+/**
+ * Calculates remaining viewport margin outside the grid
+ * also adding in the width of the specified columns
+ *
+ * @param property string  The CSS property to modify
+ * @param columns  integer The number of columns in the grid
+ */
+@mixin dynamicGridWidth($property: width, $columns: 1) {
+  @include viewportMargin($property, #{$container-max-width} * (#{$columns} / 12))
+}
+
+/**
+ * Sets the placeholder color for input and textareas
+ *
+ * @param color  The color for the placeholder
+ */
+@mixin placeholders($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+
+  &:-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+}

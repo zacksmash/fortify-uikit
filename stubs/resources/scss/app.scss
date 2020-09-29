@@ -1,0 +1,19 @@
+/** 1. Your custom variables and variable overwrites. */
+@import 'global/settings';
+@import 'global/mixins';
+
+/** 2. Import default variables and available mixins. */
+@import 'node_modules/uikit/src/scss/variables.scss';
+@import 'node_modules/uikit/src/scss/mixins.scss';
+
+/** 3. Your custom mixin overwrites. */
+@import 'components/settings';
+
+/** 4. Import UIkit */
+@import 'node_modules/uikit/src/scss/uikit.scss';
+
+/** 5. Site Styles */
+@import 'global/styles';
+@import 'global/imports/components';
+@import 'global/imports/layouts';
+@import 'global/imports/views';

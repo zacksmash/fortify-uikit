@@ -1,0 +1,27 @@
+//
+// Globally extend UIkit form styles
+//
+
+input:not([type='radio']):not([type='checkbox']):not([type='range']):not([type='submit']) {
+	@extend .uk-input;
+}
+
+textarea {
+	@extend .uk-textarea;
+}
+
+select {
+	@extend .uk-select;
+}
+
+input[type='radio'] {
+	@extend .uk-radio;
+}
+
+input[type='checkbox'] {
+	@extend .uk-checkbox;
+}
+
+input[type='range'] {
+	@extend .uk-range;
+}
