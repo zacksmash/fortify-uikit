@@ -33,4 +33,4 @@ This command will publish **FortifyUIkits's** views and resources to your projec
 
 ## License
 
-**FortifyUI** is open-sourced software licensed under the [MIT license](LICENSE.md).
+**FortifyUIkit** is open-sourced software licensed under the [MIT license](LICENSE.md).
