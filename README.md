@@ -9,7 +9,7 @@
 <a name="installation"></a>
 ## Installation
 
-To get started, you'll need to install **FortifyUIkit** using Composer. This package requires FortifyUI, so please make sure you have installed that first..
+To get started, you'll need to install **FortifyUIkit** using Composer. This package requires [*FortifyUI*](https://github.com/zacksmash/fortify-ui), so please make sure you have installed that first.
 
 ```bash
 composer require zacksmash/fortify-uikit
