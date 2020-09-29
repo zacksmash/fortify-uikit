@@ -4,7 +4,7 @@
 
 **FortifyUIkit** is a Laravel Fortify UI preset, built with UIkit.
 
-- [Requirements](#requireents)
+- [Requirements](#requirements)
 - [Installation](#installation)
 
 <a name="requirements"></a>
