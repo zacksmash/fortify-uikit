@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <x-status-alert/>
+    <x-status-alert />
 
     <section class="uk-section">
         <div class="uk-container">
@@ -16,6 +16,8 @@
                             <p>
                                 {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
                             </p>
+
+                            <hr>
                         </div>
 
                         <div class="uk-card-body uk-padding-remove-top">
@@ -24,7 +26,11 @@
 
                                 <div class="uk-margin">
                                     <label>{{ __('Email') }}</label>
-                                    <input type="email" name="email" value="{{ old('email') }}" required autofocus />
+
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                        <input type="email" name="email" value="{{ old('email') }}" required autofocus />
+                                    </div>
                                 </div>
 
                                 <div class="uk-margin">

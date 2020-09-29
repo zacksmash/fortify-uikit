@@ -9,9 +9,9 @@
 
                     <div class="uk-card uk-box-shadow-small">
                         <div class="uk-card-header">
-                            <h2 class="uk-text-center">{{ __('Login') }}</h2>
-
+                            <h2 class="uk-text-center">{{ __('Password') }}</h2>
                             <p>{{ __('For your security, please confirm your password to continue.') }}</p>
+                            <hr>
                         </div>
 
                         <div class="uk-card-body uk-padding-remove-top">
@@ -20,7 +20,11 @@
 
                                 <div class="uk-margin">
                                     <label>{{ __('Password') }}</label>
-                                    <input type="password" name="password" required autocomplete="current-password" />
+
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                        <input type="password" name="password" required autocomplete="current-password" />
+                                    </div>
                                 </div>
 
                                 <div class="uk-margin">

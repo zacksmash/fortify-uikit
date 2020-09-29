@@ -22,6 +22,8 @@
                             <p>
                                 {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
                             </p>
+
+                            <hr>
                         </div>
 
                         <div class="uk-card-body uk-padding-remove-top">
@@ -45,7 +47,6 @@
                                 </form>
                             </div>
 
-                            </div>
                         </div>
                     </div>
                 </div>

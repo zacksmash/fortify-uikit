@@ -23,6 +23,8 @@ class FortifyUIkitCommand extends Command
     protected function publishAssets()
     {
         $this->callSilent('vendor:publish', ['--tag' => 'resources', '--force' => true]);
+
+        File::deleteDirectory(resource_path('css'));
     }
 
     protected function updateWebpackUrl()

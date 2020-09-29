@@ -10,6 +10,7 @@
                     <div class="uk-card uk-box-shadow-small">
                         <div class="uk-card-header">
                             <h2 class="uk-text-center">{{ __('Register') }}</h2>
+                            <hr>
                         </div>
 
                         <div class="uk-card-body uk-padding-remove-top">
@@ -18,22 +19,40 @@
 
                                 <div class="uk-margin">
                                     <label>{{ __('Name') }}</label>
-                                    <input type="text" name="name" value="{{ old('name') }}" required autofocus autocomplete="name" />
+
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                        <input type="text" name="name" value="{{ old('name') }}" required autofocus
+                                            autocomplete="name" />
+                                    </div>
                                 </div>
 
                                 <div class="uk-margin">
                                     <label>{{ __('Email') }}</label>
-                                    <input type="email" name="email" value="{{ old('email') }}" required />
+
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                        <input type="email" name="email" value="{{ old('email') }}" required />
+                                    </div>
                                 </div>
 
                                 <div class="uk-margin">
                                     <label>{{ __('Password') }}</label>
-                                    <input type="password" name="password" required autocomplete="new-password" />
+
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                        <input type="password" name="password" required autocomplete="new-password" />
+                                    </div>
                                 </div>
 
                                 <div class="uk-margin">
                                     <label>{{ __('Confirm Password') }}</label>
-                                    <input type="password" name="password_confirmation" required autocomplete="new-password" />
+
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon" uk-icon="icon: check"></span>
+                                        <input type="password" name="password_confirmation" required
+                                            autocomplete="new-password" />
+                                    </div>
                                 </div>
 
                                 <div class="uk-margin">
