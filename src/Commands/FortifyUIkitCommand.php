@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\File;
 
 class FortifyUIkitCommand extends Command
 {
-    public $signature = 'uikit:install';
+    public $signature = 'fortify-ui:uikit';
 
-    public $description = 'Install UIkit framework with views and resources';
+    public $description = 'Install UIkit preset, with views and resources';
 
     public function handle()
     {

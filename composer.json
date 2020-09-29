@@ -3,9 +3,9 @@
     "description": "Fortify-driven Laravel UI replacement",
     "keywords": [
         "zacksmash",
-        "fortify-ui"
+        "fortify-uikit"
     ],
-    "homepage": "https://github.com/zacksmash/fortify-ui",
+    "homepage": "https://github.com/zacksmash/fortify-uikit",
     "license": "MIT",
     "authors": [
         {
