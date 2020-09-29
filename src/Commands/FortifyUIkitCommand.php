@@ -9,15 +9,15 @@ class FortifyUIkitCommand extends Command
 {
     public $signature = 'uikit:install';
 
-    public $description = 'Install UIkit views and resources';
+    public $description = 'Install UIkit framework with views and resources';
 
     public function handle()
     {
         $this->publishAssets();
         $this->updateWebpackUrl();
 
-        $this->comment('UIkit is now installed!');
-        $this->info('Remember to run npm i && npm run watch.');
+        $this->comment('UIkit is now installed.');
+        $this->info('Remember to run npm i && npm run dev!');
     }
 
     protected function publishAssets()
