@@ -15,6 +15,7 @@ class FortifyUIkitCommand extends Command
     {
         $this->publishAssets();
         $this->updateWebpackUrl();
+        $this->updateRoutes();
 
         $this->comment('UIkit is now installed.');
         $this->info('Remember to run npm i && npm run dev!');
@@ -36,6 +37,15 @@ class FortifyUIkitCommand extends Command
                 env('APP_URL'),
                 File::get(base_path('webpack.mix.js'))
             )
+        );
+    }
+
+    protected function updateRoutes()
+    {
+        file_put_contents(
+            base_path('routes/web.php'),
+            "\nRoute::prefix('user')->middleware(['auth'])->group(function () {\n\tRoute::view('profile', 'profile.show');\n});\n",
+            FILE_APPEND
         );
     }
 }
