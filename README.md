@@ -1,4 +1,4 @@
-<p align="center"><img width="400" src="https://github.com/zacksmash/fortify-uikit/blob/master/fortify-uikit-image.png"></p>
+<p align="center"><img width="400" src="https://github.com/zacksmash/fortify-uikit/raw/master/fortify-uikit-image.png"></p>
 
 # Introduction
 
@@ -33,9 +33,10 @@ This command will publish **FortifyUIkits's** views and resources to your projec
 - a `webpack.mix.js` file, tuned for UIkit
 - a `package.json` file, for required NPM modules
 - a slightly opioniated `.editorconfig` file
-- a `.gitignore`
+- a `.gitignore` file
+- a new route for `user/profile`
 
-<p align="center"><img  src="https://github.com/zacksmash/fortify-uikit/blob/master/fortify-uikit-screenshot.png"></p>
+<p align="center"><img  src="https://github.com/zacksmash/fortify-uikit/raw/master/fortify-uikit-screenshot.png"></p>
 
 ## License
 
