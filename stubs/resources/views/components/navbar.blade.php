@@ -9,7 +9,7 @@
     <ul class="uk-navbar-nav">
       <li>
         <a href="#"><span uk-icon="grid"></span></a>
-        <div class="uk-navbar-dropdown uk-width-medium uk-margin-remove-top">
+        <div class="uk-navbar-dropdown uk-width-medium">
           <ul class="uk-nav uk-navbar-dropdown-nav">
             <!-- Authentication Links -->
             @guest

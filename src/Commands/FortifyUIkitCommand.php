@@ -44,7 +44,7 @@ class FortifyUIkitCommand extends Command
     {
         file_put_contents(
             base_path('routes/web.php'),
-            "\nRoute::prefix('user')->middleware(['auth'])->group(function () {\n\tRoute::view('profile', 'profile.show');\n});\n",
+            "\nRoute::prefix('user')->middleware(['auth', 'verified'])->group(function () {\n\tRoute::view('profile', 'profile.show');\n});\n",
             FILE_APPEND
         );
     }

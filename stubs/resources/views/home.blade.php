@@ -4,9 +4,9 @@
   <section class="uk-section">
     <div class="uk-container">
       <div class="uk-flex-center" uk-grid>
-        <div class="uk-width-2-3">
+        <div class="uk-width-1-1 uk-width-3-5@s">
           <div class="uk-card uk-box-shadow-small uk-box-shadow-hover-large">
-            <div class="uk-card-header">
+            <div class="uk-card-body">
               <h2 class="uk-card-title uk-margin-remove-bottom uk-text-lead uk-text-center">
                 <a href="" class="uk-icon-button uk-button-primary" uk-icon="star"></a>
                 Welcome, {{ Auth::user()->name }}!

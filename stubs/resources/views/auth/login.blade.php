@@ -50,9 +50,13 @@
                 </div>
 
                 @if (Route::has('password.request'))
-                  <div class="uk-text-center">
+                  <div class="uk-flex uk-flex-center">
                     <a href="{{ route('password.request') }}">
                       <small>{{ __('Forgot your password?') }}</small>
+                    </a>
+                    <span class="uk-margin-small-left uk-margin-small-right">|</span>
+                    <a href="{{ route('register') }}">
+                      <small>{{ __('Sign up') }}</small>
                     </a>
                   </div>
                 @endif
