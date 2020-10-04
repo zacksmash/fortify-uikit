@@ -42,7 +42,7 @@
                 </a>
               </li>
 
-              <li uk-tooltip="Logout">
+              <li>
                 <a href="{{ route('logout') }}"
                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                   <span uk-icon="sign-out" class="uk-margin-small-right"></span>
