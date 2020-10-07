@@ -23,7 +23,7 @@ class FortifyUIkitCommand extends Command
 
     protected function publishAssets()
     {
-        $this->callSilent('vendor:publish', ['--tag' => 'resources', '--force' => true]);
+        $this->callSilent('vendor:publish', ['--tag' => 'fortify-uikit-resources', '--force' => true]);
 
         File::deleteDirectory(resource_path('css'));
     }
