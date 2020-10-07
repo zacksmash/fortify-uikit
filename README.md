@@ -32,7 +32,7 @@ This command will publish **FortifyUIkits's** views and resources to your projec
 - All `auth` views
 - a `webpack.mix.js` file, tuned for UIkit
 - a `package.json` file, for required NPM modules
-- a slightly opioniated `.editorconfig` file
+- a slightly opinionated `.editorconfig` file
 - a `.gitignore` file
 - a new route for `user/profile`
 
