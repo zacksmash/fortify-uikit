@@ -18,7 +18,7 @@ class FortifyUIkitServiceProvider extends ServiceProvider
                 __DIR__ . '/../stubs/.gitignore' => base_path('.gitignore'),
                 __DIR__ . '/../stubs/package.json' => base_path('package.json'),
                 __DIR__ . '/../stubs/webpack.mix.js' => base_path('webpack.mix.js'),
-            ], 'resources');
+            ], 'fortify-uikit-resources');
 
             $this->commands([
                 FortifyUIkitCommand::class,
