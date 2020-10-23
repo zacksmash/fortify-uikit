@@ -36,6 +36,12 @@
                     {{ __('Email Password Reset Link') }}
                   </button>
                 </div>
+                
+                <div class="uk-flex uk-flex-center">
+                  <a href="{{ route('login') }}">
+                    <small>{{ __('Back to login') }}</small>
+                  </a>
+                </div>
               </form>
             </div>
           </div>
