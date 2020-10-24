@@ -10,7 +10,9 @@
           <div class="uk-card uk-box-shadow-small">
             <div class="uk-card-header">
               <h2 class="uk-text-center">{{ __('Password') }}</h2>
+
               <p>{{ __('For your security, please confirm your password to continue.') }}</p>
+
               <hr>
             </div>
 
@@ -19,7 +21,7 @@
                 @csrf
 
                 <div class="uk-margin">
-                  <label>{{ __('Password') }}</label>
+                  <label class="uk-form-label">{{ __('Password') }}</label>
 
                   <div class="uk-inline uk-width-1-1">
                     <span class="uk-form-icon" uk-icon="icon: lock"></span>

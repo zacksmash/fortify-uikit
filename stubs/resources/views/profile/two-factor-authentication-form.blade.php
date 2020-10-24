@@ -15,6 +15,7 @@
                 {{ __('Add additional security to your account using two factor authentication.') }}
               </p>
             </div>
+
             <div class="uk-width-1-1 uk-width-2-3@s uk-width-2-3@m">
               @if(! auth()->user()->two_factor_secret)
                 {{-- Enable 2FA --}}
@@ -30,6 +31,7 @@
               <p>
                   {{ __('When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone\'s Google Authenticator application.') }}
               </p>
+
               @if(! auth()->user()->two_factor_secret)
                 <form method="POST" action="{{ url('user/two-factor-authentication') }}">
                   @csrf
@@ -100,7 +102,7 @@
                     <form method="POST" action="{{ url('user/two-factor-recovery-codes') }}">
                       @csrf
 
-                      <button type="submit" class="uk-button uk-button-primary">
+                      <button type="submit" class="uk-button uk-button-primary uk-width-1-1">
                         {{ __('Regenerate Recovery Codes') }}
                       </button>
                     </form>

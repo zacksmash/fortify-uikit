@@ -23,7 +23,7 @@
                 @csrf
 
                 <div class="uk-margin">
-                  <label>{{ __('Email') }}</label>
+                  <label class="uk-form-label">{{ __('Email') }}</label>
 
                   <div class="uk-inline uk-width-1-1">
                     <span class="uk-form-icon" uk-icon="icon: mail"></span>
@@ -36,7 +36,7 @@
                     {{ __('Email Password Reset Link') }}
                   </button>
                 </div>
-                
+
                 <div class="uk-flex uk-flex-center">
                   <a href="{{ route('login') }}">
                     <small>{{ __('Back to login') }}</small>

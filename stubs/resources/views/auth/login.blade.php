@@ -10,6 +10,7 @@
           <div class="uk-card uk-box-shadow-small">
             <div class="uk-card-header">
               <h2 class="uk-text-center">{{ __('Login') }}</h2>
+
               <hr>
             </div>
 
@@ -18,7 +19,7 @@
                 @csrf
 
                 <div class="uk-margin">
-                  <label>{{ __('Email') }}</label>
+                  <label class="uk-form-label">{{ __('Email') }}</label>
 
                   <div class="uk-inline uk-width-1-1">
                     <span class="uk-form-icon" uk-icon="icon: mail"></span>
@@ -27,7 +28,7 @@
                 </div>
 
                 <div class="uk-margin">
-                  <label>{{ __('Password') }}</label>
+                  <label class="uk-form-label">{{ __('Password') }}</label>
 
                   <div class="uk-inline uk-width-1-1">
                     <span class="uk-form-icon" uk-icon="icon: lock"></span>
