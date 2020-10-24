@@ -10,7 +10,7 @@
 <a name="requirements"></a>
 ## Requirements
 
-This package requires Laravel Fortify and FortifyUI. Installing [*FortifyUI*](https://github.com/zacksmash/fortify-ui) will automatically install and configure Laravel Fortify for you, so you may start there.
+This package requires [*FortifyUI*](https://github.com/zacksmash/fortify-ui). Please, install that first before installing **FortifyUIkit**.
 
 <a name="installation"></a>
 ## Installation
