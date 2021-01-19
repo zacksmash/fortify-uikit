@@ -42,10 +42,19 @@ class FortifyUIkitCommand extends Command
 
     protected function updateRoutes()
     {
-        file_put_contents(
+        File::put(
             base_path('routes/web.php'),
             "\nRoute::prefix('user')->middleware(['auth', 'verified'])->group(function () {\n\tRoute::view('profile', 'profile.show');\n});\n",
             FILE_APPEND
         );
+
+        File::put(
+            resource_path('views/welcome.blade.php'),
+            str_replace(
+                "{{ url('/home') }}",
+                "{{ url('/dashboard') }}",
+                File::get(resource_path('views/welcome.blade.php'))
+            )
+        )
     }
 }

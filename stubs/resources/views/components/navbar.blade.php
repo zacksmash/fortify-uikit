@@ -1,6 +1,6 @@
 <nav class="uk-navbar-container" uk-navbar>
   <div class="uk-navbar-left">
-    <a class="uk-navbar-item uk-logo" href="{{ route('home') }}">
+    <a class="uk-navbar-item uk-logo" href="{{ route('dashboard') }}">
       {{ config('app.name', 'Laravel') }}
     </a>
   </div>
