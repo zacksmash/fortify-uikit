@@ -55,6 +55,6 @@ class FortifyUIkitCommand extends Command
                 "{{ url('/dashboard') }}",
                 File::get(resource_path('views/welcome.blade.php'))
             )
-        )
+        );
     }
 }
