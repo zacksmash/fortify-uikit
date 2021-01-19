@@ -46,14 +46,5 @@ class FortifyUIkitCommand extends Command
             base_path('routes/web.php'),
             "\nRoute::prefix('user')->middleware(['auth', 'verified'])->group(function () {\n\tRoute::view('profile', 'profile.show');\n});\n"
         );
-
-        File::put(
-            resource_path('views/welcome.blade.php'),
-            str_replace(
-                "{{ url('/home') }}",
-                "{{ url('/dashboard') }}",
-                File::get(resource_path('views/welcome.blade.php'))
-            )
-        );
     }
 }
