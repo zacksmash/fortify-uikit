@@ -24,7 +24,7 @@ composer require zacksmash/fortify-uikit
 Next, you'll need to run the install command:
 
 ```bash
-php artisan fortify-ui:uikit
+php artisan fortify:uikit
 ```
 
 This command will publish **FortifyUIkits's** views and resources to your project.
