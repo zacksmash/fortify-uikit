@@ -56,10 +56,10 @@
                       <small>{{ __('Forgot your password?') }}</small>
                     </a>
                     @if (Route::has('register'))
-                    <span class="uk-margin-small-left uk-margin-small-right">|</span>
-                    <a href="{{ route('register') }}">
-                      <small>{{ __('Sign up') }}</small>
-                    </a>
+                      <span class="uk-margin-small-left uk-margin-small-right">|</span>
+                      <a href="{{ route('register') }}">
+                        <small>{{ __('Sign up') }}</small>
+                      </a>
                     @endif
                   </div>
                 @endif
